@@ -1,0 +1,154 @@
+@charset "utf-8";
+@import url("./common.css");
+
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'LINESeedKR-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#wrap {
+	width: 100%;
+	height: 100%;
+}
+
+// SVG-DRAW 부분
+.svg-draw {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+// MAIN-FONT 부분
+$main-font : 'LINESeedKR-Bd';
+$sub-font : 'LINESeedKR-Rg';
+// HEADER 부분
+.nav-header {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 120px;
+	align-items: center;
+	padding:50px;
+	box-sizing: border-box;
+	&-logo {
+		font-size:20px;
+		color:#6b6b6b;
+		display: flex;
+    	align-items: center;
+		&::before {
+			position: relative;
+			display: inline-block;
+			background-image: url('../images/ico-logo.png');
+			background-size: 100%;
+			width:41px;
+			height: 16px;
+			content: '';
+			margin-right: 5px;
+		}
+	}
+}
+
+// MAIN-SLIDER 부분
+.main-slider {
+	position: relative;
+	width: 100%;
+	height: 660px;
+	background-image: url('../images/main-slide.jpg');
+	background-size: 100%;
+	&-inner {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+
+		h2 {
+			font-size: 70px;
+			color:white;
+			font-family: $main-font;
+			text-align: center;
+		}
+
+		h4 {
+			margin-top: 24px;
+			font-size: 36px;
+			font-family: $main-font;
+			color:white;
+			text-align: center;
+		}
+	}
+}
+
+// MAIN-CONTENTS 부분
+.main-contents {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top:160px;
+	padding-bottom: 120px;
+	border-bottom:1px solid #ddd;
+	font-family: $main-font;
+	h3 {
+		text-align: center;
+		font-size: 40px;
+	}
+	span {
+		text-align: center;
+		font-size:24px;
+		font-weight: 400;
+		color:#666;
+		display: block;
+		margin-top:32px;
+		font-family:$sub-font;
+	}
+	&-list {
+		position: relative;
+		margin-top:120px;
+		&-parents {
+			position: relative;
+			margin:0 auto;
+			width: 1160px;
+			li {
+				position: relative;
+				height: 400px;
+				background-color: #ddd;
+				border-radius: 200px;
+			}
+
+
+		}
+
+		&-child {
+			position: relative;
+			display: flex;
+			width: 100%;
+			height: auto;
+			justify-content: space-between;
+			&-cir {
+				position: relative;
+				width:50%;
+				height: 50%;
+				background-color: white;
+				border-radius: 100%;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+			}
+			li {
+				display: flex;
+				flex:0 0 33%;
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+@import url("./common.css");
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LINESeedKR-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.svg-draw {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 120px;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.nav-header-logo {
+  font-size: 20px;
+  color: #6b6b6b;
+  display: flex;
+  align-items: center;
+}
+.nav-header-logo::before {
+  position: relative;
+  display: inline-block;
+  background-image: url("../images/ico-logo.png");
+  background-size: 100%;
+  width: 41px;
+  height: 16px;
+  content: "";
+  margin-right: 5px;
+}
+
+.main-slider {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  background-image: url("../images/main-slide.jpg");
+  background-size: 100%;
+}
+.main-slider-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-slider-inner h2 {
+  font-size: 70px;
+  color: white;
+  font-family: "LINESeedKR-Bd";
+  text-align: center;
+}
+.main-slider-inner h4 {
+  margin-top: 24px;
+  font-size: 36px;
+  font-family: "LINESeedKR-Bd";
+  color: white;
+  text-align: center;
+}
+
+.main-contents {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 160px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #ddd;
+  font-family: "LINESeedKR-Bd";
+}
+.main-contents h3 {
+  text-align: center;
+  font-size: 40px;
+}
+.main-contents span {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #666;
+  display: block;
+  margin-top: 32px;
+  font-family: "LINESeedKR-Rg";
+}
+.main-contents-list {
+  position: relative;
+  margin-top: 120px;
+}
+.main-contents-list-parents {
+  position: relative;
+  margin: 0 auto;
+  width: 1160px;
+}
+.main-contents-list-parents li {
+  position: relative;
+  height: 400px;
+  background-color: #ddd;
+  border-radius: 200px;
+}
+.main-contents-list-child {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.main-contents-list-child-cir {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-contents-list-child li {
+  display: flex;
+  flex: 0 0 33%;
+}/*# sourceMappingURL=style.css.map */
