@@ -16,6 +16,8 @@
 	<script src="./js/front.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="./js/jquery.drawsvg.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 	<title>LG_CNS</title>
 </head>
 
@@ -37,7 +39,7 @@
 		</section>
 		<!-- 메인 슬라이드 : END -->
 
-		<!-- 메인 컨텐츠 START -->
+		<!-- 개인정보 데이터 시장 및 기술 동향 : START -->
 		<section class="main-contents">
 			<h3>개인정보 데이터 시장 및 기술 동향</h3>
 			<span>데이터 활용에 대한 필요성 증가와 동시에 프라이버시를 보호하기 위한 법률 강화 추세</span>
@@ -47,7 +49,7 @@
 						<ul class="main-contents-list-child">
 							<li>
 								<div class="main-contents-list-child-cir">
-									<svg class="svg-draw" width="47" height="57" viewBox="0 0 47 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="svg-draw" onscroll="on" width="47" height="57" viewBox="0 0 47 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M38.0002 55.173H8.55577C4.44466 55.173 1.11133 51.8397 1.11133 47.7285V9.17299C1.11133 5.06188 4.44466 1.72855 8.55577 1.72855H38.0002C42.1113 1.72855 45.4447 5.06188 45.4447 9.17299V47.7285C45.5558 51.8397 42.1113 55.173 38.0002 55.173Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
 									</svg>
 
@@ -112,7 +114,7 @@
 										<path d="M19 56.5V71" stroke="black" stroke-width="2" stroke-linecap="round"/>
 										<path d="M59 56.5V71" stroke="black" stroke-width="2" stroke-linecap="round"/>
 									</svg>
-									<h4>My&nbsp;Data</h4>
+									<h4>My Data</h4>
 								</div>
 							</li>
 						</ul>
@@ -139,6 +141,7 @@
 										<path d="M66 57C69.866 57 73 53.866 73 50C73 46.134 69.866 43 66 43C62.134 43 59 46.134 59 50C59 53.866 62.134 57 66 57Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 									<h4>At-Rest</h4>
+									<span>디스크,DB 암호화 접근 권한/통제</span>
 								</div>
 							</li>
 
@@ -161,23 +164,337 @@
 										<path d="M33.436 47.6514H44.2131" stroke="#666666" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
 										<path d="M47.457 47.6514H50.8904" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
 									</svg>
+									<h4>In-Transit</h4>
+									<span>전송데이터 암호화 보안 연결(HTTPS,SSL ···)</span>
+								</div>
+							</li>
+
+							<li>
+								<div class="main-contents-list-child-cir">
+									<svg class="svg-draw" width="84" height="83" viewBox="0 0 84 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M28.833 4.56107C18.4513 4.56107 10.4105 14.0905 10.4105 23.1087C10.4105 27.7456 10.4105 32.6382 10.4105 32.6382L1.58545 46.5605L8.5963 49.6518C8.5963 49.6518 7.03963 65.1081 17.9363 65.1081C28.833 65.1081 24.9471 65.1081 28.833 65.1081C32.7188 65.1081 32.988 68.1994 32.988 72.325C32.988 76.4505 32.988 81.5988 32.988 81.5988" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M35.0596 4.56107H61.3356" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M35.0596 13.5795H53.7396L59.9662 21.3076H71.6471" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M35.0596 23.8177H44.9848" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M65.0073 9C67.2165 9 69.0073 7.20914 69.0073 5C69.0073 2.79086 67.2165 1 65.0073 1C62.7982 1 61.0073 2.79086 61.0073 5C61.0073 7.20914 62.7982 9 65.0073 9Z" fill="white" stroke="#D00042" stroke-width="2"/>
+										<path d="M75.647 25.7467C77.8561 25.7467 79.647 23.9559 79.647 21.7467C79.647 19.5376 77.8561 17.7467 75.647 17.7467C73.4378 17.7467 71.647 19.5376 71.647 21.7467C71.647 23.9559 73.4378 25.7467 75.647 25.7467Z" fill="white" stroke="#D00042" stroke-width="2"/>
+										<path d="M47.7798 29.0356C49.9889 29.0356 51.7798 27.2447 51.7798 25.0356C51.7798 22.8264 49.9889 21.0356 47.7798 21.0356C45.5706 21.0356 43.7798 22.8264 43.7798 25.0356C43.7798 27.2447 45.5706 29.0356 47.7798 29.0356Z" fill="white" stroke="#D00042" stroke-width="2"/>
+										<path d="M77.6864 49.7101C77.1597 47.3509 76.1649 45.1777 74.7955 43.2718L77.5928 39.0882L74.2922 35.811L69.9382 38.6814C68.0655 37.4844 65.9588 36.6128 63.6881 36.1828L62.6348 31.023H57.9648L56.9114 36.1828C54.6408 36.6128 52.534 37.4844 50.6613 38.6814L46.3073 35.811L43.0067 39.0882L45.804 43.2718C44.4346 45.1777 43.4398 47.3509 42.9131 49.7101L38.1846 50.663V55.2999L42.7141 56.2064C43.1121 58.7747 44.0484 61.1687 45.4295 63.2605L43.0184 66.8747L46.319 70.1519L49.842 67.8277C51.9722 69.3733 54.4535 70.4541 57.1572 70.9306L57.9765 74.9399H62.6465L63.4658 70.9306C66.1694 70.4541 68.6507 69.3733 70.7809 67.8277L74.3039 70.1519L77.6045 66.8747L75.1934 63.2605C76.5745 61.1803 77.5109 58.7863 77.9088 56.2064L82.4384 55.2999V50.663L77.6864 49.7101Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M60.3051 58.5308C63.3949 58.5308 65.8997 56.0437 65.8997 52.9758C65.8997 49.9079 63.3949 47.4208 60.3051 47.4208C57.2153 47.4208 54.7104 49.9079 54.7104 52.9758C54.7104 56.0437 57.2153 58.5308 60.3051 58.5308Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M71.53 52.9756C71.53 46.8279 66.5089 41.8307 60.3057 41.8307" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M49.0815 52.9756C49.0815 59.1232 54.1027 64.1204 60.3059 64.1204" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<h4>In-Use</h4>
+									<span>개인정보 연산 강화 기술</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<ul class="main-contents-list-child">
+							<li>
+								<div class="main-contents-list-child-cir">
+
+									<h4>EU : GDPR</h4>
 								</div>
 							</li>
 
 							<li>
 								<div class="main-contents-list-child-cir">
 
+									<h4>미국 : CCPA</h4>
+								</div>
+							</li>
+
+							<li>
+								<div class="main-contents-list-child-cir">
+									<svg class="svg-draw" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M51.7507 30.199V1H10.1934V55.6273C10.1934 58.1411 8.18254 60.2682 5.59718 60.2682C3.10757 60.2682 1.00098 58.2378 1.00098 55.6273V49.4394H10.0976" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M37.3929 60.267H5.69824" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M41.6971 11.8287H25.6104" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M22.9342 11.8284H20.0615" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M41.6971 19.3696H25.6104" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M22.9342 19.3699H20.0615" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M41.6971 27.0082H25.6104" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M22.9342 27.0082H20.0615" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M41.6971 34.6469H25.6104" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M22.9342 34.6469H20.0615" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M65.8306 71.0001H42.5623C39.6897 71.0001 37.3916 68.6797 37.3916 65.7791V53.21C37.3916 50.3095 39.6897 47.989 42.5623 47.989H65.8306C68.7032 47.989 71.0013 50.3095 71.0013 53.21V65.7791C70.9056 68.6797 68.6075 71.0001 65.8306 71.0001Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M47.3486 48.0857V37.3536C47.3486 33.5829 50.4128 30.489 54.1472 30.489C57.8816 30.489 60.9457 33.5829 60.9457 37.3536V48.0857" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M54.1436 59.4826V54.1649" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M54.1471 64.6189C55.7865 64.6189 57.1155 63.277 57.1155 61.6216C57.1155 59.9663 55.7865 58.6244 54.1471 58.6244C52.5077 58.6244 51.1787 59.9663 51.1787 61.6216C51.1787 63.277 52.5077 64.6189 54.1471 64.6189Z" fill="black"/>
+									</svg>
+									<h4>In-Use</h4>
+									<span>개인정보 연산 강화 기술</span>
 								</div>
 							</li>
 						</ul>
 					</li>
 				</ul>
 			</div>
+
+			<div class="main-contents-list-text">
+				<ul class="main-contents-list-text-01">
+					<li>인공지능 · 블록체인 등 신기술과 마이 데이터 등 데이터 산업 규모가 커지면서 데이터 활용에 대한 관심 고조</li>
+					<li>신뢰를 전제하기 어려운 다자간 비즈니스 환경에서 안전한 방식으로 다수간 데이터 공유와 분석 수행에 대한 요구 발생</li>
+					<li>개인 정보 보호 및 활용을 위한 국내외 법규/규제(GDPR, CCPA, 데이터 3법 등)가 강화되어 이에 대한 대응 필요</li>
+					<li>데이터의 저장, 전송 뿐 아니라 공유 및 분석 등 이용 중 보호를 위한 방안이 아키텍처 설계 단계부터 반영될 수 있는 기술에 대한 요구 증대</li>
+				</ul>
+
+
+
+				<ul class="main-contents-list-text-02">
+					<li><dt>* GDPR(General Data Protection Regulation )</dt><dd>일반 데이터 보호 규정)은 EU 및 EEA의 유럽 연합 데이터 보호 및 개인 정보 보호법과 EU 및 EEA 외부로의 개인 데이터 전송에 관한 법률</dd></li>
+					<li><dt>* CCPA(California Consumer Privacy. Act)</dt><dd>캘리포니아 주민에 대한 프라이버시 권 및 소비자 보호를 강화하기 위한 주 법령.(’18 제정,’20 발효 )</dd></li>
+				</ul>
+
+			</div>
+
+
 		</section>
+		<!-- 개인정보 데이터 시장 및 기술 동향 : END -->
 
+		<!-- 개인정보 연산 강화 기술 정의 : START -->
+		<section class="main-info">
+			<div class="main-info-inner">
+				<h3>개인정보 연산 강화 기술 정의</h3>
+				<span>개인 정보의 직접적 노출을 피하여 프라이버시를 보호한 상태로 이를 활용한 공유 및 분석을 가능하게 하는 기술</span>
+				<div class="main-info-box">
+					<dl>Privacy-enhancing computation (PEC) techniques allow protection of data in use,<br>in addition to conventional approaches for in-transit and at-rest protection</dl>
+					<dt>- Gartner -</dt>
+				</div>
 
+				<div class="main-info-data">
+					<ul class="main-info-data-box1">
+						<li>
+							<svg class="svg-draw-02" viewBox="0 0 106 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M99.5069 73.6001H6.49289C3.67834 73.6001 1.3999 71.3334 1.3999 68.5334V61.6001H104.6V68.5334C104.6 71.3334 102.321 73.6001 99.5069 73.6001Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M64.2799 67.6001H39.3199C38.2228 67.6001 37.3999 66.722 37.3999 65.5513V61.6001H66.1999V65.5513C66.1999 66.722 65.377 67.6001 64.2799 67.6001Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M53 1V61.2386" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M17 30.4001V19.6001" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M25.3999 30.4V23.2" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M32.5996 30.4001V7.6001" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M41 30.3999V12.3999" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6.19971 45.8139L9.86551 42.8966L18.7551 51.2966L29.962 37.6001L35.0417 54.4001L43.5909 47.2725L51.7997 54.0277" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M63.7998 61.6L70.4991 38.8L76.9998 61.108" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M88.1579 14.8198C88.1579 14.7165 88.1708 14.6261 88.1708 14.5357C88.1708 9.38362 83.9829 5.19995 78.8257 5.19995V14.8198H88.1579Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M75.5448 18.0998V8.47998C70.3876 8.47998 66.1997 12.6636 66.1997 17.8158C66.1997 22.9679 70.3876 27.1515 75.5448 27.1515C80.6116 27.1515 84.7219 23.1228 84.877 18.1127H75.5448V18.0998Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M29 80.5334V87.6001" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M40.333 80.5334V87.6001" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M51.6665 80.5334V87.6001" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M63 80.5334V87.6001" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M74.2002 80.5334V87.6001" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M6.19971 31.6001H99.1997" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M99.7997 1.6001H6.19971V61.6001H99.7997V1.6001Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+							</svg>
+							<h4>Synthetic Data</h4>
+							<span>(재현 데이터)</span>
+						</li>
+						<li>
+							<svg class="svg-draw-02"  viewBox="0 0 99 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<ellipse cx="50" cy="20.4286" rx="33" ry="9.42857" stroke="black" stroke-width="2"/>
+								<path d="M83 40.3335C83 45.5408 68.2254 49.7621 50 49.7621C31.7746 49.7621 17 45.5408 17 40.3335" stroke="black" stroke-width="2"/>
+								<path d="M83 20.4287V40.3335" stroke="black" stroke-width="2" stroke-linecap="round"/>
+								<path d="M83 60.238C83 65.4453 68.2254 69.6666 50 69.6666C31.7746 69.6666 17 65.4453 17 60.238" stroke="black" stroke-width="2"/>
+								<path d="M17 40.3333V60.238" stroke="black" stroke-width="2" stroke-linecap="round"/>
+								<path d="M83 40.3333V60.238" stroke="black" stroke-width="2" stroke-linecap="round"/>
+								<path d="M83 80.1431C83 85.3503 68.2254 89.5716 50 89.5716C31.7746 89.5716 17 85.3503 17 80.1431" stroke="black" stroke-width="2"/>
+								<path d="M17 60.238V80.1428" stroke="black" stroke-width="2" stroke-linecap="round"/>
+								<path d="M57.8449 39.1892C55.3304 39.3644 52.7031 39.4573 49.9998 39.4573C47.2966 39.4573 44.6692 39.3644 42.1548 39.1892" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+								<path d="M57.8449 59C55.3304 59.1752 52.7031 59.268 49.9998 59.268C47.2966 59.268 44.6692 59.1752 42.1548 59" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+								<path d="M57.8449 79.3999C55.3304 79.5751 52.7031 79.6679 49.9998 79.6679C47.2966 79.6679 44.6692 79.5751 42.1548 79.3999" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+								<path d="M92.9907 72.68C92.5242 70.5742 91.6429 68.6345 90.4299 66.9333L92.9078 63.1989L89.9841 60.2737L86.1274 62.8359C84.4686 61.7675 82.6024 60.9895 80.5911 60.6057L79.658 56H75.5213L74.5882 60.6057C72.5769 60.9895 70.7107 61.7675 69.0519 62.8359L65.1951 60.2737L62.2715 63.1989L64.7493 66.9333C63.5363 68.6345 62.6551 70.5742 62.1885 72.68L58 73.5306V77.6694L62.0123 78.4785C62.3648 80.771 63.1942 82.9079 64.4176 84.775L62.2818 88.0011L65.2055 90.9263L68.3262 88.8517C70.2131 90.2313 72.411 91.196 74.8059 91.6213L75.5317 95.2H79.6683L80.3941 91.6213C82.789 91.196 84.9869 90.2313 86.8738 88.8517L89.9945 90.9263L92.9182 88.0011L90.7824 84.775C92.0058 82.9182 92.8352 80.7814 93.1877 78.4785L97.2 77.6694V73.5306L92.9907 72.68Z" fill="white" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M77.6001 81.8365C81.0444 81.8365 83.8365 79.0444 83.8365 75.6001C83.8365 72.1559 81.0444 69.3638 77.6001 69.3638C74.1559 69.3638 71.3638 72.1559 71.3638 75.6001C71.3638 79.0444 74.1559 81.8365 77.6001 81.8365Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M31.8642 38.7786H6.61167C3.49408 38.7786 1 36.1512 1 32.8671V18.6358C1 15.3517 3.49408 12.7244 6.61167 12.7244H31.8642C34.9818 12.7244 37.4759 15.3517 37.4759 18.6358V32.8671C37.3719 36.1512 34.8779 38.7786 31.8642 38.7786Z" fill="white" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M11.4219 12.7244V7.99861C11.4219 4.1543 14.9447 1 19.2381 1C23.5316 1 27.0544 4.1543 27.0544 7.99861V12.7244" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M19.2378 24.4486V19.2378" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M19.2382 29.9623C21.3966 29.9623 23.1463 28.2125 23.1463 26.0541C23.1463 23.8957 21.3966 22.146 19.2382 22.146C17.0798 22.146 15.3301 23.8957 15.3301 26.0541C15.3301 28.2125 17.0798 29.9623 19.2382 29.9623Z" fill="#D00042"/>
+							</svg>
+							<h4>Homomorphic<br>Encryption</h4>
+							<span>(동형 암호)</span>
+						</li>
+						<li>
+							<svg class="svg-draw-02"  viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M73.9994 79.4999V0.999947H14.2225V72.0769C14.2225 75.6928 11.3301 78.7524 7.61127 78.7524C4.03016 78.7524 1 75.8319 1 72.0769V63.1761H14.0848" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M74.0002 78.7524H7.75684" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M59.5379 18.3281H36.3984" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M32.549 18.3279H28.417" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M59.5379 29.1765H36.3984" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M32.549 29.1768H28.417" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M59.5379 40.1631H36.3984" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M32.549 40.1631H28.417" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M55 51.1497H36.3984" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<path d="M32.549 51.1497H28.417" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+								<circle cx="65.5" cy="65.2524" r="17.5" fill="white" stroke="black" stroke-width="2"/>
+								<path d="M83 82.7524L78 77.7524" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M93.3724 96.7524C92.4474 96.7524 91.5133 96.3988 90.8059 95.6914L83.0611 87.9465C81.6463 86.5318 81.6463 84.2373 83.0611 82.8135C84.4758 81.3988 86.7793 81.3988 88.1941 82.8135L95.9389 90.5584C97.3537 91.9731 97.3537 94.2676 95.9389 95.6914C95.2316 96.3988 94.3065 96.7524 93.3724 96.7524Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<h4>Differential Privacy</h4>
+							<span>(차등 개인정보보호)</span>
+						</li>
+					</ul>
+
+					<ul class="main-info-data-box2">
+						<li>
+							<div class="main-info-data-box">
+								<svg class="svg-draw" width="86" height="98" viewBox="0 0 86 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<ellipse cx="34" cy="27.4286" rx="33" ry="9.42857" stroke="black" stroke-width="2"/>
+									<path d="M67 47.3335C67 52.5408 52.2254 56.7621 34 56.7621C15.7746 56.7621 1 52.5408 1 47.3335" stroke="black" stroke-width="2"/>
+									<path d="M1 27.4287V47.3335" stroke="black" stroke-width="2" stroke-linecap="round"/>
+									<path d="M67 27.4287V47.3335" stroke="black" stroke-width="2" stroke-linecap="round"/>
+									<path d="M67 67.238C67 72.4453 52.2254 76.6666 34 76.6666C15.7746 76.6666 1 72.4453 1 67.238" stroke="black" stroke-width="2"/>
+									<path d="M1 47.3333V67.238" stroke="black" stroke-width="2" stroke-linecap="round"/>
+									<path d="M67 47.3333V67.238" stroke="black" stroke-width="2" stroke-linecap="round"/>
+									<path d="M67 87.1431C67 92.3503 52.2254 96.5716 34 96.5716C15.7746 96.5716 1 92.3503 1 87.1431" stroke="black" stroke-width="2"/>
+									<path d="M1 67.238V87.1428" stroke="black" stroke-width="2" stroke-linecap="round"/>
+									<path d="M67 67.238V87.1428" stroke="black" stroke-width="2" stroke-linecap="round"/>
+									<path d="M41.8449 46.1892C39.3304 46.3644 36.7031 46.4573 33.9998 46.4573C31.2966 46.4573 28.6692 46.3644 26.1548 46.1892" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+									<path d="M41.8449 66C39.3304 66.1752 36.7031 66.268 33.9998 66.268C31.2966 66.268 28.6692 66.1752 26.1548 66" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+									<path d="M41.8449 86.3999C39.3304 86.5751 36.7031 86.6679 33.9998 86.6679C31.2966 86.6679 28.6692 86.5751 26.1548 86.3999" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+									<path d="M78.664 38.7786H53.4115C50.2939 38.7786 47.7998 36.1512 47.7998 32.8671V18.6358C47.7998 15.3517 50.2939 12.7244 53.4115 12.7244H78.664C81.7816 12.7244 84.2757 15.3517 84.2757 18.6358V32.8671C84.1718 36.1512 81.6777 38.7786 78.664 38.7786Z" fill="#F5F5F5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+									<path d="M58.2217 12.7244V7.99861C58.2217 4.1543 61.7445 1 66.0379 1C70.3314 1 73.8542 4.1543 73.8542 7.99861V12.7244" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+									<path d="M66.0376 24.4486V19.2378" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+									<path d="M66.038 29.9623C68.1964 29.9623 69.9461 28.2125 69.9461 26.0541C69.9461 23.8957 68.1964 22.146 66.038 22.146C63.8796 22.146 62.1299 23.8957 62.1299 26.0541C62.1299 28.2125 63.8796 29.9623 66.038 29.9623Z" fill="#D00042"/>
+								</svg>
+							</div>
+							<h4>INPUT</h4>
+						</li>
+						<li>
+							<div class="main-info-data-box">
+								<svg class="svg-draw" width="104" height="97" viewBox="0 0 104 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M67.8401 25.8338H35.1752C33.8288 25.8338 32.7363 24.7498 32.7363 23.4139V3.41987C32.7363 2.08401 33.8288 1 35.1752 1H67.8401C69.1864 1 70.2789 2.08401 70.2789 3.41987V23.4139C70.2789 24.7498 69.1864 25.8338 67.8401 25.8338Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+									<path d="M41.479 31.8687H61.5414" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+									<path d="M36.1037 63.1731H3.43883C2.09251 63.1731 1 62.0891 1 60.7532V40.7592C1 39.4234 2.09251 38.3394 3.43883 38.3394H36.1037C37.4501 38.3394 38.5426 39.4234 38.5426 40.7592V60.7532C38.5426 62.0891 37.4501 63.1731 36.1037 63.1731Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+									<path d="M9.73779 69.208H29.8002" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+									<path d="M100.561 63.1731H67.8959C66.5495 63.1731 65.457 62.0891 65.457 60.7532V40.7592C65.457 39.4234 66.5495 38.3394 67.8959 38.3394H100.561C101.907 38.3394 103 39.4234 103 40.7592V60.7532C103 62.0891 101.907 63.1731 100.561 63.1731Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+									<path d="M74.1992 69.208H94.2616" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+									<path d="M51.5327 39.6433V60.5" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2.81 2.81"/>
+									<path d="M20.2588 72.1602V76.1458H41" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3 3"/>
+									<path d="M82.9589 72.1602V76.1458H62" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3 3"/>
+									<path d="M51.4461 81.3846C56.0385 81.3846 59.7614 77.6618 59.7614 73.0694C59.7614 68.477 56.0385 64.7542 51.4461 64.7542C46.8537 64.7542 43.1309 68.477 43.1309 73.0694C43.1309 77.6618 46.8537 81.3846 51.4461 81.3846Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10"/>
+									<path d="M36.4771 96.9068C36.4771 88.3242 43.4162 81.385 51.9988 81.385C60.5815 81.385 67.5206 88.3242 67.5206 96.9068" stroke="#D00042" stroke-width="2" stroke-miterlimit="10"/>
+								</svg>
+							</div>
+							<h4>ANALYSIS</h4>
+						</li>
+						<li>
+							<div class="main-info-data-box">
+								<svg class="svg-draw" width="118" height="91" viewBox="0 0 118 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M63 13.6724C68.2625 6.02074 77.1358 1 87.1843 1C103.332 1 116.43 13.9554 116.43 29.9505C116.43 43.6291 106.847 55.0856 93.9716 58.1148" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
+									<path d="M11.7354 49.3271V37.6394" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M19.043 49.329V41.7156" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M26.3457 49.3277V25.186" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M33.6484 49.3284V29.7961" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M1.35059 65.7477L4.75937 62.318L13.0257 72.1936L23.4468 56.0911L28.1704 75.8422L36.1202 67.4626L43.7534 75.4044" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M53.0923 81.9566L59.2524 57.1582L65.23 81.4215" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M77.571 32.0698C77.571 31.9725 77.5832 31.8873 77.5832 31.8022C77.5832 26.9495 73.6388 23.009 68.7812 23.009V32.0698H77.571Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M65.6935 35.1596V26.0989C60.836 26.0989 56.8916 30.0394 56.8916 34.892C56.8916 39.7447 60.836 43.6852 65.6935 43.6852C70.4658 43.6852 74.3372 39.8906 74.4833 35.1718H65.6935V35.1596Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M87.79 89.6831H1V81.9602V18H87.79V80.671V89.6831Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M1 81.9575H87.79" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M44.4004 18V81.9602" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M1 49.9719H87.79" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<h4>OUTPUT</h4>
+						</li>
+					</ul>
+
+					<ul class="main-info-data-box3">
+						<li>
+							<ul>
+								<li>
+									<svg class="svg-draw-02" viewBox="0 0 86 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="27" cy="27" r="26" stroke="black" stroke-width="2"/>
+										<circle cx="59" cy="27" r="26" stroke="black" stroke-width="2"/>
+										<circle cx="59" cy="27" r="26" stroke="black" stroke-width="2"/>
+										<path d="M77.7202 62.4821H56.6764C54.0784 62.4821 52 60.2927 52 57.5559V45.6965C52 42.9597 54.0784 40.7703 56.6764 40.7703H77.7202C80.3182 40.7703 82.3966 42.9597 82.3966 45.6965V57.5559C82.31 60.2927 80.2316 62.4821 77.7202 62.4821Z" fill="white" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M60.6851 40.7703V36.8322C60.6851 33.6286 63.6207 31 67.1986 31C70.7765 31 73.7122 33.6286 73.7122 36.8322V40.7703" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M67.1982 49.7071V45.3647" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M67.1987 55.8468C68.9973 55.8468 70.4554 54.3887 70.4554 52.59C70.4554 50.7914 68.9973 49.3333 67.1987 49.3333C65.4 49.3333 63.9419 50.7914 63.9419 52.59C63.9419 54.3887 65.4 55.8468 67.1987 55.8468Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<h4>Private Set<br>Intersection</h4>
+								</li>
+								<li>
+									<svg class="svg-draw-02" viewBox="0 0 82 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M35.1665 45.3333V55.3333H49.3332" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
+										<path d="M76 1.16675H1V44.5001H76V1.16675Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M36 16.1667H48.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
+										<path d="M36 22.8333H63.5" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+										<path d="M36 29.5H63.5" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+										<path d="M18.9168 21.9999C21.4481 21.9999 23.5002 19.9479 23.5002 17.4166C23.5002 14.8853 21.4481 12.8333 18.9168 12.8333C16.3855 12.8333 14.3335 14.8853 14.3335 17.4166C14.3335 19.9479 16.3855 21.9999 18.9168 21.9999Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+										<path d="M11 30.3333C11 25.7255 14.5392 22 18.9167 22C23.2941 22 26.8333 25.7255 26.8333 30.3333" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+										<path d="M75.8867 60.9821H54.8429C52.2449 60.9821 50.1665 58.7927 50.1665 56.0559V44.1965C50.1665 41.4597 52.2449 39.2703 54.8429 39.2703H75.8867C78.4847 39.2703 80.5631 41.4597 80.5631 44.1965V56.0559C80.4765 58.7927 78.3981 60.9821 75.8867 60.9821Z" fill="white" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M58.8516 39.2703V35.3322C58.8516 32.1286 61.7872 29.5 65.3651 29.5C68.943 29.5 71.8787 32.1286 71.8787 35.3322V39.2703" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M65.3647 48.2071V43.8647" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M65.3652 54.3468C67.1638 54.3468 68.6219 52.8887 68.6219 51.09C68.6219 49.2914 67.1638 47.8333 65.3652 47.8333C63.5665 47.8333 62.1084 49.2914 62.1084 51.09C62.1084 52.8887 63.5665 54.3468 65.3652 54.3468Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<h4>Zero<br>Knowledge Proof</h4>
+									<span>(영지식 증명)</span>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<ul>
+								<li>
+									<svg class="svg-draw-02 " viewBox="0 0 89 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M83.1112 79H6.00005C3.66672 79 1.77783 77.1111 1.77783 74.7778V69H87.3334V74.7778C87.3334 77.1111 85.4445 79 83.1112 79Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M53.5556 73.4445H33.3334C32.4445 73.4445 31.7778 72.7778 31.7778 71.8889V68.8889H55.1112V71.8889C55.1112 72.7778 54.4445 73.4445 53.5556 73.4445Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M80.4443 19H6.44434V68.8889H80.4443V19Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M25 84.7778V90.6667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M34.4443 84.7778V90.6667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M43.8887 84.7778V90.6667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M53.3335 84.7778V90.6667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M62.6665 84.7778V90.6667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M42.3333 9.77789C44.6038 9.77789 46.4444 7.93728 46.4444 5.66678C46.4444 3.39627 44.6038 1.55566 42.3333 1.55566C40.0628 1.55566 38.2222 3.39627 38.2222 5.66678C38.2222 7.93728 40.0628 9.77789 42.3333 9.77789Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M68.4445 26.5556C66.4445 15.8889 57.7778 7.44447 46.7778 5.88892" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M27 51.7779C31.4444 55.3334 37 57.4445 43.1111 57.4445C56 57.4445 66.6667 48.0001 68.6667 35.6667" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M37.9999 6.11133C26.1111 8.44466 17.2222 18.8891 17.2222 31.4447C17.2222 36.4447 18.6666 41.2224 21.2222 45.2224" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M23.5554 53.0001C25.826 53.0001 27.6666 51.1594 27.6666 48.8889C27.6666 46.6184 25.826 44.7778 23.5554 44.7778C21.2849 44.7778 19.4443 46.6184 19.4443 48.8889C19.4443 51.1594 21.2849 53.0001 23.5554 53.0001Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M69.1111 35.2222C71.3816 35.2222 73.2222 33.3816 73.2222 31.1111C73.2222 28.8406 71.3816 27 69.1111 27C66.8406 27 65 28.8406 65 31.1111C65 33.3816 66.8406 35.2222 69.1111 35.2222Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+									</svg>
+									<h4>Private Set<br>Intersection</h4>
+								</li>
+
+								<li>
+									<svg class="svg-draw-02" viewBox="0 0 89 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M44.1108 54.8889L44.1108 41" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M39.9999 58.889C39.9999 61.1595 41.8406 63.0001 44.1111 63.0001C46.3816 63.0001 48.2222 61.1595 48.2222 58.889C48.2222 56.6184 46.3816 54.7778 44.1111 54.7778C41.8406 54.7778 39.9999 56.6184 39.9999 58.889Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M58.0002 30L69.3335 30L69.3335 49.1111" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M29.6668 30L18.3335 30L18.3335 49.1111" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M65.8892 55.8889L72.667 55.8889L72.667 49.1111L65.8892 49.1111L65.8892 55.8889Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M21.7778 55.8889L15 55.8889L15 49.1111L21.7778 49.1111L21.7778 55.8889Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M83.1112 80.0002H6.00005C3.66672 80.0002 1.77783 78.1114 1.77783 75.778V70.0002H87.3334V75.778C87.3334 78.1114 85.4445 80.0002 83.1112 80.0002Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M53.5556 74.4447H33.3334C32.4445 74.4447 31.7778 73.778 31.7778 72.8892V69.8892H55.1112V72.8892C55.1112 73.778 54.4445 74.4447 53.5556 74.4447Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M80.4443 20.0002H6.44434V69.8891H80.4443V20.0002Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M25 85.7781V91.667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M34.4443 85.7781V91.667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M43.8887 85.7781V91.667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M53.3335 85.7781V91.667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M62.6665 85.7781V91.667" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+										<path d="M58.9907 17.68C58.5242 15.5742 57.6429 13.6345 56.4299 11.9333L58.9078 8.19894L55.9841 5.27372L52.1274 7.83588C50.4686 6.76745 48.6024 5.98947 46.5911 5.60566L45.658 1H41.5213L40.5882 5.60566C38.5769 5.98947 36.7107 6.76745 35.0519 7.83588L31.1951 5.27372L28.2715 8.19894L30.7493 11.9333C29.5363 13.6345 28.6551 15.5742 28.1885 17.68L24 18.5306V22.6694L28.0123 23.4785C28.3648 25.771 29.1942 27.9079 30.4176 29.775L28.2818 33.0011L31.2055 35.9263L34.3262 33.8517C36.2131 35.2313 38.411 36.196 40.8059 36.6213L41.5317 40.2H45.6683L46.3941 36.6213C48.789 36.196 50.9869 35.2313 52.8738 33.8517L55.9945 35.9263L58.9182 33.0011L56.7824 29.775C58.0058 27.9182 58.8352 25.7814 59.1877 23.4785L63.2 22.6694V18.5306L58.9907 17.68Z" fill="white" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M43.6001 26.8365C47.0444 26.8365 49.8365 24.0444 49.8365 20.6001C49.8365 17.1559 47.0444 14.3638 43.6001 14.3638C40.1559 14.3638 37.3638 17.1559 37.3638 20.6001C37.3638 24.0444 40.1559 26.8365 43.6001 26.8365Z" stroke="#D00042" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<h4>Secure<br>
+										Multiparty<br>
+										Computation</h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="main-info-text">
+					<li>· 해당 기술군은 Privacy-Enhancing Technologies (PET), Privacy Enhancing Computation(PEC), <br>Privacy-Preserving Technologies (PPTs) 으로 명칭</li>
+					<li>· Gartner는 2021년부터 10대 전략 기술 트렌드로 선정하고 있으며, Forester는 특히 고성능 AI 모델의 잠재력을 발휘하는데 활용될 것으로 전망</li>
+					<li>· PEC 기술군은 크게 데이터/연산/환경 중심으로 분류되며, 이중 데이터/연산 세부  기술 7개에 대해 소개</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 개인정보 연산 강화 기술 정의 : END -->
 	</main>
-</div>
+
 
 </div>
 </body>
