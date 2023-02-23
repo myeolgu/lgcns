@@ -26,6 +26,7 @@
 	transform: translate(-50%,-50%);
 }
 
+
 .svg-draw-02 {
 	position: relative;
 	width: 80px;
@@ -93,7 +94,7 @@ $sub-font : 'LINESeedKR-Rg';
 // MAIN-CONTENTS 부분
 .main-contents {
 	position: relative;
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 	margin-top:160px;
 	padding-bottom: 120px;
@@ -271,7 +272,7 @@ $sub-font : 'LINESeedKR-Rg';
 .main-info {
 	position: relative;
 	margin:0 auto;
-	width: 1160px;
+	max-width: 1160px;
 	border-top: 1px solid #ddd;
 	&-inner {
 		position: relative;
